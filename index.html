@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Xpress</title>
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             line-height: 1.5;
             margin: 0;
@@ -13,28 +13,17 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            background-image: url("https://www.gymmarine.com/wp-content/uploads/2017/09/IMG_C3C381298781-1-1372x800.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .container {
             flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: center;
             padding: 20px;
-            overflow: hidden;
-        }
-
-        body:before {
-            content: "";
-            display: block;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-image: url("https://www.gymmarine.com/wp-content/uploads/2017/09/IMG_C3C381298781-1-1372x800.jpeg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         .header {
@@ -42,28 +31,29 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
-            padding: 10px;
+            margin-bottom: 20px;
         }
 
         .nav-links {
-            display: flex;
             list-style: none;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: large; /* Changed font size here */
             margin: 0;
             padding: 0;
-            color:#211951;
+            display: flex; /* Display the nav links as a row */
         }
 
         .nav-link {
             margin: 0 10px;
             cursor: pointer;
-            font-size: medium; /* Changed font size here */
             position: relative;
         }
 
-        .nav-link:hover {
+        .nav-link a {
+            color: #211951;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .nav-link:hover a {
             color: #f54242;
         }
 
@@ -87,22 +77,23 @@
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            margin-bottom: 30px;
-        }
-
-        .image-container {
-            width: 500px;
-            margin-right: 30px;
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
         }
 
         .text-container h1 {
-            margin-bottom: 10px;
+            margin-bottom: 35px;
+            color: #3e7d38;
         }
 
         .text-container p {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
+            color: #211951;
         }
 
         .cta-button {
@@ -113,6 +104,8 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            text-decoration: none;
+            font-size: medium;
         }
 
         .cta-button:hover {
@@ -156,19 +149,28 @@
             width: 130px;
             height: auto;
         }
-        .footer
+       
 
         .footer-right {
             padding-right: 10px;
             font-size: medium;
         }
-        a{
-   
-      }
+       
 
 
         .footer-social-media li {
             margin: 0 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav-links {
+                flex-direction: column; /* Change to vertical layout on mobile */
+                align-items: flex-start; /* Align items to the start */
+            }
+
+            .nav-link {
+                margin: 10px 0; /* Add margin between vertical links */
+            }
         }
     </style>
 </head>
@@ -192,7 +194,7 @@
             <div class="image-container">
             </div>
             <div class="text-container" style="padding: 60px 0;">
-                <h1>YOU NOW FLEX WITH US</h1>
+                <h1>YOU CAN NOW FLEX WITH US</h1>
                 <p>
                    YOU CAN START THE TEST
                     <br>
