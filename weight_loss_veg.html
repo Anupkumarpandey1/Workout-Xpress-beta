@@ -120,6 +120,37 @@
             width: 350px; /* Adjust as needed */
             height: auto;
         }
+        /* Your existing CSS styles here */
+
+        /* New CSS styles for the sub nav bar */
+        .sub-navbar {
+            background-color: #f2f2f2;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #003049;
+            padding: 10px 0;
+        }
+
+        .sub-navbar a {
+            display: inline-block;
+            color: #003049;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            border-right: 2px solid #003049;
+        }
+
+        .sub-navbar a:last-child {
+            border-right: none;
+        }
+
+        .sub-navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -130,6 +161,12 @@
     <div class="navbar">
         <a href="weight_loss_veg.html">Weight Loss</a>
         <a href="muscle_gain.html">Muscle Gain</a>
+    </div>
+    <!-- New sub nav bar -->
+    <div class="sub-navbar">
+        <a href="weight_loss_veg.html">Day 1</a>
+        <a href="day_2weightloss.html">Day 2</a>
+        <a href="day_3weightloss.html">Day 3</a>
     </div>
 
     <div class="total-calories">
@@ -162,24 +199,24 @@
                     <p>P: 0.19 • C: 0.0g • F: 0.0g</p>
                 </div>
                 <div class="food-item right-item">
-                    <p class="hero">Bread</p>
-                    <img src="https://thumbs.dreamstime.com/b/long-loaf-bread-22826883.jpg" alt="Placeholder">
-                    <p>Quantity: 2 slice | Cal: 136.4 kcal</p>
-                    <p>P: 4.5g • C: 26.0g • F: 0.0g</p>
+                    <p class="hero">Whole grain bread</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSERg2fhu56Lm5D86H9gCjr3QQi1_wqNyFIhWaYvJEFLA&s" alt="Placeholder">
+                    <p>Quantity: 2 slice | Cal: 150.0 kcal</p>
+                    <p>P: 6.0g • C: 26.0g • F: 2.0g</p>
                 </div>
             </div>
             <div class="clearfix">
                 <div class="food-item left-item">
-                    <p class="hero">Butter</p>
-                    <img src="https://t3.ftcdn.net/jpg/02/40/14/70/360_F_240147049_1DKgPqORVBXfHdqh7YZvCgDbQl7LVptM.jpg" alt="Placeholder">
-                    <p>Quantity: 10g | Cal: 72 kcal</p>
-                    <p>P: 0.1g • C: 0.0g • F: 8.1g</p>
+                    <p class="hero">Avocado</p>
+                    <img src="https://img.freepik.com/premium-photo/fresh-avocado-isolated-white-background_34435-4135.jpg" alt="Placeholder">
+                    <p>Quantity: 50g | Cal: 80 kcal</p>
+                    <p>P: 1.0g • C: 4.0g • F: 7.0g</p>
                 </div>
                 <div class="food-item right-item">
-                    <p class="hero">Cheese slice by amul</p>
-                    <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2022/02/Cheese-Brands1.jpg" alt="Placeholder">
-                    <p>Quantity: 1 slice | Cal: 70.0 kcal</p>
-                    <p>P: 4.0g • C: 0.0g • F: 5.0g</p>
+                    <p class="hero">Greek yogurt</p>
+                    <img src="https://img.freepik.com/premium-photo/bowl-greek-yogurt-white-background_1000714-115.jpg" alt="Placeholder">
+                    <p>Quantity: 100g | Cal: 60.0 kcal</p>
+                    <p>P: 10.0g • C: 4.0g • F: 0.0g</p>
                 </div>
             </div>
         </div>
@@ -188,30 +225,30 @@
             <h3>LUNCH</h3>
             <div class="clearfix">
                 <div class="food-item left-item">
-                    <p class="hero">Chicken breast</p>
-                    <img src="https://as2.ftcdn.net/v2/jpg/02/72/69/45/1000_F_272694536_98Od9KwzYbJ5ZlwN01kc68KicfE922X1.jpg" alt="Placeholder">
-                    <p>Quantity: 125g | Cal: 160.0 kcal</p>
-                    <p>P: 32.5g • C: 0.0g • F: 2.5g</p>
+                    <p class="hero">Grilled chicken breast</p>
+                    <img src="https://as2.ftcdn.net/v2/jpg/01/04/30/09/1000_F_104300989_T6IISORtAw1bGyjcwyFgMe8bhkLVFL7Z.jpg" alt="Placeholder">
+                    <p>Quantity: 125g | Cal: 165.0 kcal</p>
+                    <p>P: 31.0g • C: 0.0g • F: 3.6g</p>
                 </div>
                 <div class="food-item right-item">
-                    <p class="hero">Rice</p>
-                    <img src="https://media.istockphoto.com/id/1242507868/photo/rice-on-a-white-background.jpg?s=612x612&w=0&k=20&c=1LCExP9O11W3X1xggc6rp3AG5ZtWcrsfWEide56Qhoo=" alt="Placeholder">
-                    <p>Quantity: 35g | Cal: 124.9 kcal</p>
-                    <p>P: 5.2g • C: 26.2g • F: 0.4g</p>
+                    <p class="hero">Quinoa</p>
+                    <img src="https://media.istockphoto.com/id/1168462285/photo/wooden-bowl-of-quinoa-seeds-isolated-on-white-background-top-view.jpg?s=612x612&w=0&k=20&c=q-bvCOMjNFbwWa7U0lfL9PCboUKArX1qMw2U6kHWYxw=" alt="Placeholder">
+                    <p>Quantity: 50g | Cal: 185.0 kcal</p>
+                    <p>P: 4.0g • C: 32.0g • F: 2.0g</p>
                 </div>
             </div>
             <div class="clearfix">
                 <div class="food-item left-item">
-                    <p class="hero">Olive oil</p>
-                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zX3Bob3RvX29mX29saXZlX29pbF9pc29sYXRlZF9vbl9hX3doaXRlX2JhY2tncl8yMWVmZjJhZC03ZmZiLTQzMTYtOTc4MS0yNWMwZmQ3MGU2ZDZfMi5qcGc.jpg" alt="Placeholder">
-                    <p>Quantity: 5g | Cal: 45.0 kcal</p>
-                    <p>P: 0.0g • C: 0.0g • F: 5.0g</p>
+                    <p class="hero">Broccoli</p>
+                    <img src="https://t4.ftcdn.net/jpg/01/38/59/65/360_F_138596527_vo9I8cKl20phDuIauIEfeQ2mWGw60Wjm.jpg" alt="Placeholder">
+                    <p>Quantity: 100g | Cal: 34 kcal</p>
+                    <p>P: 2.8g • C: 6.0g • F: 0.4g</p>
                 </div>
                 <div class="food-item right-item">
-                    <p class="hero">Mixed Frozen vegetables</p>
-                    <img src="https://media.istockphoto.com/id/1305310939/photo/frozen-vegetables-in-a-plate-and-sprinkled-on-a-white-top-view.jpg?s=612x612&w=0&k=20&c=8kHXl12FEjKw1npXw60NX58VWkvOWb_jn-s_XIJ1uqY=" alt="Placeholder">
-                    <p>Quantity: 100g | Cal: 60.0 kcal</p>
-                    <p>P: 2.9g • C: 13.1g • F: 0.1g</p>
+                    <p class="hero">Extra virgin olive ojpgil</p>
+                    <img src="https://c8.alamy.com/comp/PGRRR0/green-olives-and-olive-oil-isolated-on-white-background-PGRRR0.jpg" alt="Placeholder">
+                    <p>Quantity: 5g | Cal: 45.0 kcal</p>
+                    <p>P: 0.0g • C: 0.0g • F: 5.0g</p>
                 </div>
             </div>
         </div>
@@ -220,22 +257,16 @@
             <h3>SNACKS</h3>
             <div class="clearfix">
                 <div class="food-item left-item">
-                    <p class="hero">Whey Protein</p>
-                    <img src="https://img.freepik.com/premium-photo/whey-protein-powder-scoop-isolated-white-background_1004691-2999.jpg" alt="Placeholder">
-                    <p>Quantity: 1 scoop | Cal: 130.0 kcal</p>
-                    <p>P: 25.0g• C: 3.0g • F: 2.0g</p>
+                    <p class="hero">Almonds</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKm8SVI3GAwtsusHP_4nBXA785RynwZSt-D8JUi_pm6w&s" alt="Placeholder">
+                    <p>Quantity: 30g | Cal: 160.0 kcal</p>
+                    <p>P: 6.0g• C: 6.0g • F: 14.0g</p>
                 </div>
                 <div class="food-item right-item"> <!-- Shifted to right-item class -->
-                    <p class="hero">Apple with skin,Raw</p>
-                    <img src="https://thumbs.dreamstime.com/b/red-apple-isolated-white-background-71475088.jpg" alt="Placeholder">
-                    <p>Quantity: 100g | Cal: 52.0 kcal</p>
-                    <p>P: 0.3g • C: 13.8g • F: 0.2g</p>
-                </div>
-                <div class="food-item left-item"> <!-- Moved curd to left-item class -->
-                    <p class="hero">Curd</p>
-                    <img src="https://www.shutterstock.com/image-photo/sour-cream-wooden-bowl-spoon-600nw-1660349047.jpg" alt="Placeholder">
-                    <p>Quantity: 120g | Cal: 74.4 kcal</p>
-                    <p>P: 4.8g • C: 5.3g • F: 3.7g</p>
+                    <p class="hero">Greek yogurt with berries</p>
+                    <img src="https://as2.ftcdn.net/v2/jpg/06/21/94/83/1000_F_621948344_UV99UsEDIlt7b0VrkNuSxST08EuOyOHH.jpg" alt="Placeholder">
+                    <p>Quantity: 150g | Cal: 90.0 kcal</p>
+                    <p>P: 15.0g • C: 7.0g • F: 0.0g</p>
                 </div>
             </div>
         </div>
@@ -244,28 +275,29 @@
             <h3>Dinner</h3>
             <div class="clearfix">
                 <div class="food-item left-item">
-                    <p class="hero">Tofu raw</p>
-                    <img src="https://www.shutterstock.com/image-photo/closeup-tofu-isolated-on-white-260nw-529664815.jpg" alt="Placeholder">
-                    <p>Quantity: 150g | Cal: 117.0 kcal</p>
-                    <p>P: 13.6g • C: 4.3g • F: 6.3g</p>
+                    <p class="hero">Salmon fillet</p>
+                    <img src="https://img.freepik.com/premium-photo/fresh-salmon-fillet-with-basil-white-background_120872-2192.jpg" alt="Placeholder">
+                    <p>Quantity: 150g | Cal: 240.0 kcal</p>
+                    <p>P: 34.0g • C: 0.0g • F: 11.0g</p>
                 </div>
                 <div class="food-item right-item">
-                    <p class="hero">Rice dry uncooked</p>
-                    <img src="https://t4.ftcdn.net/jpg/03/09/22/29/360_F_309222978_boIWb07TufCqJ8al1keo6nnXASPsXPsy.jpg" alt="Placeholder">
-                    <p>Quantity: 40g | Cal: 142.8 kcal</p>
-                    <p>P: 5.0g • C: 30.0g • F: 0.4g</p>
+                    <p class="hero">Sweet potato</p>
+                    <img src="https://m.media-amazon.com/images/I/71GwggHv8GL._AC_UF1000,1000_QL80_.jpg" alt="Placeholder">
+                    <p>Quantity: 150g | Cal: 120.0 kcal</p>
+                    <p>P: 2.0g • C: 26.0g • F: 0.2g</p>
                 </div>
             </div>
             <div class="clearfix">
                 <div class="food-item left-item">
-                    <p class="hero">Olive oil</p>
-                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zX3Bob3RvX29mX29saXZlX29pbF9pc29sYXRlZF9vbl9hX3doaXRlX2JhY2tncl8yMWVmZjJhZC03ZmZiLTQzMTYtOTc4MS0yNWMwZmQ3MGU2ZDZfMi5qcGc.jpg" alt="Placeholder">
-                    <p>Quantity: 5g | Cal: 45.0 kcal</p>
-                    <p>P: 0.0g • C: 0.0g • F: 5.0g</p>
+                    <p class="hero">Spinach</p>
+                    <img src="https://t4.ftcdn.net/jpg/01/08/76/99/360_F_108769942_rrv3QfSPmQIKCBVmVB1wUMgF8BRl3C0l.jpg" alt="Placeholder">
+                    <p>Quantity: 100g | Cal: 23 kcal</p>
+                    <p>P: 2.9g • C: 3.6g • F: 0.4g</p>
                 </div>
                 <div class="food-item right-item">
                     <p class="hero">Mixed frozen vegetables</p>
-                    <img src="https://media.istockphoto.com/id/1305310939/photo/frozen-vegetables-in-a-plate-and-sprinkled-on-a-white-top-view.jpg?s=612x612&w=0&k=20&c=8kHXl12FEjKw1npXw60NX58VWkvOWb_jn-s_XIJ1uqY=" alt="Placeholder">
+                    <img src="https://st2.depositphotos.com/10614052/49850/i/450/depositphotos_498502998-stock-photo-bowl-mix-frozen-vegetables-white.jpg" alt="Placeholder">
+                    
                     <p>Quantity: 100g | Cal: 60.0 kcal</p>
                     <p>P: 2.9g • C: 13.1g • F: 0.1g</p>
                 </div>
